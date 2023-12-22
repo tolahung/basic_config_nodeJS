@@ -6,7 +6,7 @@ const sequelize = new Sequelize('test_hoidanit', 'root', null, {
     dialect: 'mysql'
 });
 
-let connectDB = async () => {
+let connectDB = async() => {
     try {
         await sequelize.authenticate();
         console.log('Connection has been established successfully.');
